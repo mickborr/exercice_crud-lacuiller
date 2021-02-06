@@ -1,3 +1,22 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :restaurants
+
+  # ----------------Inventer le routing CRUD---------------------
+
+  # # Lire touts les restaurants
+  # get 'restaurants' => 'restaurants#index'
+
+  # # Lire un restaurant
+  # get 'restaurants/:id' => 'restaurant#show'
+
+  # # creer un restaurant
+  # get 'restaurants/new' => 'restaurant#new'
+  # post 'restaurants' => 'restaurant#create'
+
+  # # updater un restaurant
+  # get 'restaurants/:id/edit' => 'restaurant#edit'
+  # patch 'restaurants/:id' => 'restaurant#update'
+
+  # # supprimer un restaurant
+  # delete 'restaurants/:id' => 'restaurant#destroy'
 end
